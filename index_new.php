@@ -14,7 +14,6 @@ include 'conexao.php';
     <th>Idade</th>
     <th>Cidade</th>
     <th>Curso</th>
-    <th>Ações</th>
   </tr>
 
 <?php
@@ -28,10 +27,8 @@ while ($r = mysqli_fetch_assoc($res)){
     <td>{$r['idade']}</td>
     <td>{$r['cidade']}</td>
     <td>{$r['curso']}</td>
-    <td>
-      <a href='editar.php?id={$r['id']}'>Editar</a> |
-      <a href='deletar.php?id={$r['id']}' onclick='return confirm(\"Tem certeza que deseja excluir?\")'>Excluir</a>
-    </td>
   </tr>";
 }
 ?>
+
+</table>

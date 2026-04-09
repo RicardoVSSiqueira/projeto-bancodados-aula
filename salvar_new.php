@@ -11,16 +11,5 @@ VALUES (
   '$_POST[curso]'
 )");
 
-if(
-    empty($_POST['nome']) ||
-    empty($_POST['email']) ||
-    empty($_POST['telefone'])||
-    empty($_POST['idade']) ||
-    empty($_POST['cidade']) ||
-    empty($_POST['curso']) 
-){
-    die("Preencha todos os campos obrigatórios.");
-}
-
 header("Location: index.php");
 ?>
