@@ -1,3 +1,13 @@
+<?php 
+
+//Variavel é usada no title da pagina que está no header.php
+$pageTitle = "Cadastrado de um novo usuarios";
+
+//Inclui no topo da pagina(HTML inicial + navbar)
+include 'includes/header.php';
+
+?>
+
 <form method="POST" action="salvar.php">
   Nome: <input type="text" name="nome"><br><br>
   Email: <input type="email" name="email"><br><br>

@@ -1,5 +1,11 @@
 <?php
 include 'conexao.php';
+
+//Variavel é usada no title da pagina que está no header.php
+$pageTitle = "Usuarios Cadastrados";
+
+//Inclui no topo da pagina(HTML inicial + navbar)
+include 'includes/header.php';
 ?>
 
 <h2>Usuários</h2>

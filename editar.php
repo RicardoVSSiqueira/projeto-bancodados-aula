@@ -1,6 +1,11 @@
 <?php
 include 'conexao.php';
 
+$pageTitle = "EDIÇÃO DE USUARIOS";
+
+//Inclui no topo da pagina(HTML inicial + navbar)
+include 'includes/header.php';
+
 $id = $_GET['id'];
 
 $res = mysqli_query($conn, "SELECT * FROM usuarios WHERE id = $id");
